@@ -14,6 +14,9 @@ export default function AppHome(){
                 <Divider />     
             </div>
             <ForecastResume />
+            <div className="weather-divider-style" style={{width:"541px !important"}}>
+                <Divider />     
+            </div>
             <ForecastContainerDays />
             </div>
         </>

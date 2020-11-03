@@ -1,0 +1,60 @@
+
+    {
+        "days":[
+            {
+                "id": 1,
+                "name":"Monday",
+                "dataForecast":[
+                    {
+                        "maxTemp": 30,
+                        "minTemp": 28,
+                        "icon": "sunny"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name":"Tuesday",
+                "dataForecast":[
+                    {
+                        "maxTemp": 29,
+                        "minTemp": 25,
+                        "icon": "wintry"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name":"Wednesday",
+                "dataForecast":[
+                    {
+                        "maxTemp": 25,
+                        "minTemp": 22,
+                        "icon": "rainy"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name":"Thursday",
+                "dataForecast":[
+                    {
+                        "maxTemp": 23,
+                        "minTemp": 18,
+                        "icon": "sunny"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "name":"Friday",
+                "dataForecast":[
+                    {
+                        "maxTemp": 22,
+                        "minTemp": 20,
+                        "icon": "rainy"
+                    }
+                ]
+            }
+        ]
+    }        
