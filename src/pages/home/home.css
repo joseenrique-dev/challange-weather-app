@@ -9,7 +9,7 @@
     background: linear-gradient(180deg,#297af9,#333fb7) !important;
     /* display: flex; */
     flex-direction: column;
-    height: 100vh;
+    height: flex;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
@@ -25,6 +25,18 @@
 }
 .weather-divider-style{
     background: #f2ebeb;
-    width: 354px;
+    margin-top: -28px;
     margin: 0 auto;
 }
+
+.weather-location-width-divider-style{
+    width: 283px;
+}
+.weather-resume-width-divider-style{
+    width: 400px;
+}
+
+/* .weather-divider-selected-day-style{
+    color: "#e4dddd";
+    border-color: "#e4dddd"
+} */
