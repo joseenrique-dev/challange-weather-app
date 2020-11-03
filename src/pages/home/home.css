@@ -17,3 +17,14 @@
     box-shadow: 0 3px 20px 0 rgba(0,0,0,.06);
     overflow: hidden;
 }
+
+.weather-container-divider{
+    margin: 0 auto;
+    width: 28px;
+    padding: 13px;
+}
+.weather-divider-style{
+    background: #f2ebeb;
+    width: 354px;
+    margin: 0 auto;
+}
