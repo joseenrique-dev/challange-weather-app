@@ -1,0 +1,21 @@
+.weather-location-display{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.weather-city-style{
+    margin: 0 auto;
+    margin-top: 8%;
+    font-size: 24px;
+    color: #f2ebeb;
+}
+
+.weather-date-style{
+    font-size: 16px;
+    color: #f2ebeb;
+}
+
+.weather-divider-style{
+    background: #f2ebeb;
+}
