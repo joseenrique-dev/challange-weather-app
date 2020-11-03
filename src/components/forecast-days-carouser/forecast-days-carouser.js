@@ -1,6 +1,7 @@
 import "./forecast-days-carouser.css";
 import { Carousel } from 'antd';
-
+import dayDescriptionMock from '../../mock/hour-by-day.json';
+import ForecastDescriptionDay from '../forecast-description-day/forecast-description-day';
 export default function ForecastDaysCarouser(){
     const contentStyle = {
         height: '160px',
@@ -8,24 +9,26 @@ export default function ForecastDaysCarouser(){
         lineHeight: '160px',
         textAlign: 'center',
         background: '#364d79',
-      };
+    };
+    {/* afterChange={onChange} */}
+    console.log('Arr days->', dayDescriptionMock);
+    const { forecastByHour } = dayDescriptionMock.days[0]
+    console.log('destructuring', forecastByHour)
     return (
-        <>
-        <Carousel afterChange={onChange}>
-            <div>
-                <h3 style={contentStyle}>1</h3>
-            </div>
-            <div>
-                <h3 style={contentStyle}>2</h3>
-            </div>
-            <div>
-                <h3 style={contentStyle}>3</h3>
-            </div>
-            <div>
-                <h3 style={contentStyle}>4</h3>
-            </div>
-        </Carousel>
-        </>
+        <div>
+            <Carousel  >    
+                
+                <div>
+                    <h3 style={contentStyle}>2</h3>
+                </div>
+                <div>
+                    <h3 style={contentStyle}>3</h3>
+                </div>
+                <div>
+                    <h3 style={contentStyle}>4</h3>
+                </div>
+            </Carousel>
+        </div>
     );
 }
 

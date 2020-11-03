@@ -1,0 +1,131 @@
+
+    {
+        "days":[
+            {
+                "id": 1,
+                "name":"Monday",
+                "forecastByHour":[
+                    {
+                        "hour": "1:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "2:00",
+                        "temp": 28,
+                        "icon": "rainy"
+                    },
+                    {
+                        "hour": "3:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    },
+                    {
+                        "hour": "4:00",
+                        "temp": 28,
+                        "icon": "snowy"
+                    },
+                    {
+                        "hour": "5:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "6:00",
+                        "temp": 28,
+                        "icon": "rainy"
+                    },
+                    {
+                        "hour": "7:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    },
+                    {
+                        "hour": "8:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "9:00",
+                        "temp": 28,
+                        "icon": "snowy"
+                    },
+                    {
+                        "hour": "10:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "11:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    },
+                    {
+                        "hour": "12:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "13:00",
+                        "temp": 23,
+                        "icon": "wintry"
+                    },
+                    {
+                        "hour": "14:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    },
+                    {
+                        "hour": "15:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "16:00",
+                        "temp": 23,
+                        "icon": "wintry"
+                    },
+                    {
+                        "hour": "17:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    },
+                    {
+                        "hour": "18:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "19:00",
+                        "temp": 23,
+                        "icon": "wintry"
+                    },
+                    {
+                        "hour": "20:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    },
+                    {
+                        "hour": "21:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    },
+                    {
+                        "hour": "22:00",
+                        "temp": 28,
+                        "icon": "sunny"
+                    },
+                    {
+                        "hour": "23:00",
+                        "temp": 23,
+                        "icon": "wintry"
+                    },
+                    {
+                        "hour": "24:00",
+                        "temp": 28,
+                        "icon": "cloudy"
+                    }
+                ]
+            }            
+        ]
+    }        
