@@ -8,9 +8,12 @@ export default function LocationWeather(){
             <div className="weather-location-display">
 
                 <EnvironmentOutlined style={{color:'#ffffffad',fontSize:'40px'}}/>
-                <span className="weather-city-style">The Havana </span><br />
+                <span className="weather-info-style">The Havana </span><br />
                 <span className="weather-date-style">Monday, November 2, 2020</span>   
-                <Divider className="weather-divider-style" />  
+                <span className="weather-date-style">19: 25</span>   
+                <div className="weather-container-divider">
+                    <Divider className="weather-divider-style" />  
+                </div>
            </div>
         </>
     );

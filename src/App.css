@@ -73,3 +73,16 @@
   background: #fff;
 }
 
+/* General use in app */
+.weather-location-display{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.weather-info-style{
+  margin: 0 auto;
+  margin-top: 8%;
+  font-size: 24px;
+  color: #f2ebeb;
+}
+

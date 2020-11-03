@@ -1,0 +1,11 @@
+.weather-forecast-temp{
+    margin-top: -10px !important;
+    margin: 0 auto;
+    margin-top: 8%;
+    font-size: 61px;
+    color: #f2ebeb;
+}
+
+.weather-forecast-general-information{
+    margin-top: 0%;
+}
