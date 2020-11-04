@@ -3,12 +3,16 @@ const api = {
     base:"https://api.openweathermap.org/data/2.5/"
   }
 
-export default function getWeatherServices({location}) {
+export default function  getWeatherServices({location}) {
     try {
+        debugger
+        
         return fetch(
             `${api.base}weather?q=${location}&appid=${api.key}&units=metric`,
-        ).then(data =>{
-            return data;
+        )
+        .then(res => res.json())
+        .then(result => {
+            return result
         })
 
         
