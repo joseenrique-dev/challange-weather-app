@@ -4,7 +4,6 @@ import ForecastDays from '../forecast-day/forecast-day';
 import { Row } from 'antd';
 export default function ForecastContainerDays(){
 
-    console.log('Daysss',daysMock)
     return (
         <div className="site-card-wrapper" style={{marginLeft: "22px"}}>
             <Row gutter={3} className="sibling-fade">

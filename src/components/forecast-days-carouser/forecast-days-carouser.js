@@ -11,9 +11,7 @@ export default function ForecastDaysCarouser(){
         background: '#364d79',
     };
     {/* afterChange={onChange} */}
-    console.log('Arr days->', dayDescriptionMock);
     const { forecastByHour } = dayDescriptionMock.days[0]
-    console.log('destructuring', forecastByHour)
     return (
         <div>
             <Carousel  >    
