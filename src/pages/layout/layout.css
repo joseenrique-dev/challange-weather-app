@@ -1,0 +1,28 @@
+
+
+/*From app*/
+/* Style from ant-design */
+@import '~antd/dist/antd.css';
+#components-layout-demo-fixed .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+/* General use in app */
+.weather-location-display{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.weather-info-style{
+  margin: 0 auto;
+  margin-top: 1%;
+  font-size: 24px;
+  color: #f2ebeb;
+}
