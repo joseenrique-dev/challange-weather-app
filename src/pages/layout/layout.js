@@ -1,5 +1,4 @@
 
-import AppContent from '../content/content';
 import { Layout } from 'antd';
 import AppHeader from '../header/header';
 import AppFooter from '../footer/footer';

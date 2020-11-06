@@ -1,10 +1,10 @@
-
 /**
- * Search in list of date to find the selected day.
+ * Search in list of date to find the selected day..
+ * 
+ * @param {-}  
  */
 export default () => {
     let resultDay = []
-    //return listOfDate.find(data => data.dt_txt.split(" ")[0] === selectedDate);
 
     let selectedDate = localStorage.getItem("selectedDateToSearch")
     let listOfDate = JSON.parse(localStorage.getItem("storeAllDays"))

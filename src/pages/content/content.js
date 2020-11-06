@@ -69,12 +69,12 @@ function AppContent( locationRout ){
             !errorNotFound ? ( 
                 <Skeleton loading={loading}>
                     <LocationWeather city={cityName} />
-                    <div className="weather-divider-style weather-location-width-divider-style">
-                        <Divider style={{marginTop: "10px"}}/>     
+                    <div className="weater-minor-div-divider">
+                        <Divider className="weater-minor-separator-divider"/>     
                     </div>
                     <ForecastResume resumeDescription={weatherDescription} main={mainWeather} icon={icon}/>
-                    <div className="weather-divider-style weather-resume-width-divider-style">
-                        <Divider />     
+                    <div className="weater-minor-big-div-divider">
+                        <Divider className="weater-minor-separator-divider"/>     
                     </div>
                     <ForecastContainerDays 
                         location={currentRoute}

@@ -1,42 +1,28 @@
-.weather-home-distribution{
-    width: 60%;
-    padding: 20px;
-    min-height: 600px;
-    margin: 0 auto;
+
+
+/*From app*/
+/* Style from ant-design */
+@import '~antd/dist/antd.css';
+#components-layout-demo-fixed .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+.site-layout .site-layout-background {
+  background: #2a329e;
 }
 
-.weather-home-visual-style{
-    background: linear-gradient(180deg,#297af9,#333fb7) !important;
-    /* display: flex; */
-    flex-direction: column;
-    height: flex;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 3px 20px 0 rgba(0,0,0,.06);
-    overflow: hidden;
+/* General use in app */
+.weather-location-display{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
-
-.weather-container-divider{
-    margin: 0 auto;
-    width: 28px;
-    padding: 13px;
+.weather-info-style{
+  margin: 0 auto;
+  margin-top: 1%;
+  font-size: 24px;
+  color: #f2ebeb;
 }
-.weather-divider-style{
-    background: #f2ebeb;
-    margin-top: -28px;
-    margin: 0 auto;
-}
-
-.weather-location-width-divider-style{
-    width: 283px;
-}
-.weather-resume-width-divider-style{
-    width: 400px;
-}
-
-/* .weather-divider-selected-day-style{
-    color: "#e4dddd";
-    border-color: "#e4dddd"
-} */

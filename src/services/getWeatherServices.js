@@ -5,20 +5,19 @@ const api = {
     base:"https://api.openweathermap.org/data/2.5/"
   }
 
-
+/**
+ * Fetch from Api.
+ * 
+ * @param {String} location 
+ */
 export default location => {
     try {
         return fetch(
-            `${api.base}forecast?q=${location}&appid=${api.key}`,
+            `${api.base}forecast?q=${location}&units=metric&appid=${api.key}`,
         ).then(data => data.json()).then(items => {
             return items
         })
         
-        // if( result.status === 200){
-        //     return { success: true, data: await result.json() }
-        // }
-
-        // return { success: false, data: result.statusText }
         
     } catch (ex) {
         return { success: false, error: ex.message };

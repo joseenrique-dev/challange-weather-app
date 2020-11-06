@@ -1,14 +1,11 @@
 import './forecast-container-days.css';
-import daysMock from '../../mock/days-forecast.json'
 import ForecastDays from '../forecast-day/forecast-day';
 import { Row } from 'antd';
 import getDays from "../../services/getDays";
 import React, {useEffect, useState} from "react";
-import { Link, useHistory} from 'react-router-dom';
 
 function ForecastContainerDays({location, listForecast}){
-    const history = useHistory();
-    console.log("LOCATION", location)
+    
     /**
      * Initial state
      */
@@ -19,8 +16,6 @@ function ForecastContainerDays({location, listForecast}){
      * Get more recent five days.
      */
     const arrayDays = getDays(listForecast);
-    
-
 
     useEffect(() => {
 
@@ -28,13 +23,12 @@ function ForecastContainerDays({location, listForecast}){
         localStorage.setItem("storeAllDays",JSON.stringify(listForecast))    
         
         setLoading(true)
-        
-        console.log('-----------------------', arrayDays);
         setInfoDays(arrayDays)
-    return () => setLoading(false)
+
+        return () => setLoading(false)
     
     }, [listForecast]);
-    console.log('infoDays', [infoDays,loading])
+    
     return (
         <div className="site-card-wrapper" style={{marginLeft: "22px"}}>
             <Row gutter={3} className="sibling-fade" >
@@ -55,7 +49,6 @@ function ForecastContainerDays({location, listForecast}){
                         </div>
 
                     )
-                    //}
                 }
             </Row>
         </div>

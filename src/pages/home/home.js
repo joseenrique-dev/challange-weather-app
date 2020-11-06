@@ -1,29 +1,27 @@
 
-import './home.css';
-import LocationWeather from "../../components/location-weather/location-weather"
-import ForecastResume from '../../components/forecast-resume/forecast-resume';
-import ForecastContainerDays from '../../components/forecast-container-days/forecast-container-days';
-import { Divider } from 'antd';
-import ForecastDaysCarouser from '../../components/forecast-days-carouser/forecast-days-carouser';
-export default function AppHome(){
 
+import './home.css';
+import { Row } from 'antd';
+
+import weatherReport from "../../assets/img/weatherReport.png"
+import { Typography, Divider, Col } from 'antd';
+const { Title, Paragraph, Text, Link } = Typography;
+
+export default function AppHome(){
+    
     return (
         <>
-            <div className="site-layout-background weather-home-distribution weather-home-visual-style" >
-                <LocationWeather />
-                <div className="weather-divider-style weather-location-width-divider-style">
-                    <Divider style={{marginTop: "10px"}}/>     
-                </div>
-                <ForecastResume />
-                <div className="weather-divider-style weather-resume-width-divider-style">
-                    <Divider />     
-                </div>
-                <ForecastContainerDays className="weather-divider-style weather-resume-width-divider-style"/>
-                <div  >
-                    <Divider style={{ color: "#e4dddd",borderColor: "#e4dddd"}}> Wednesday </Divider>
-                </div>
-                <ForecastDaysCarouser />
-            </div>
+        <Row>
+            <Col span={6} order={4}>
+                <img src={weatherReport} alt="weather app" style={{marginLeft: "17%"}}/>
+            </Col>
+        </Row>
+    <Divider style={{color:"white"}}></Divider>
+    <Row></Row>
+       
+        <div>
+            <span style={{fontSize:"57px",color: "#2a329e",fontFamily: "Relaway", width:"57px"}}>Consulte el estado del Tiempo de cualquier ciudad en tiempo real.</span>
+        </div>
         </>
     );
-}
+}   

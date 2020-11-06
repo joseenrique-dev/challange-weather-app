@@ -1,8 +1,7 @@
 import "./forecast-days-carouser.css";
-import { Card, Carousel } from 'antd';
+import {  Carousel } from 'antd';
 import dayDescriptionMock from '../../mock/hour-by-day.json';
-import ForecastDescriptionDay from '../forecast-description-day/forecast-description-day';
-import { Col, Descriptions, Divider, Row } from 'antd';
+import { Col, Divider, Row } from 'antd';
 import getHoursByDate from "../../services/getHoursByDate"
 
 export default function ForecastDaysCarouser({props}){
@@ -12,20 +11,17 @@ export default function ForecastDaysCarouser({props}){
     const contentStyle = {
         height: '160px',
         color: '#fff',
-        //lineHeight: '160px',
         textAlign: 'center',
         backgroundColor: 'rgba(0,0,0,.05)',
         borderRadius: '6px',
         display: 'flex'
     };
-    {/* afterChange={onChange} */}
-    const { forecastByHour } = dayDescriptionMock.days[0]
-    console.log("Real date", forecastByHour)
+    
     const listSelectedHours = getHoursByDate();
-    console.log('SSSSSSSS', listSelectedHours)
+    
     return (
         <div>
-                        <Divider orientation="left" style={{color:"white"}}>Responsive</Divider>
+            <Divider orientation="left" style={{color:"white"}}>Forecast by hours of the selected day</Divider>
             <Carousel autoplay>    
                 
                 {/* Element #1 */}
@@ -173,7 +169,3 @@ export default function ForecastDaysCarouser({props}){
         </div>
     );
 }
-
-function onChange(a, b, c) {
-    console.log(a, b, c);
-  }

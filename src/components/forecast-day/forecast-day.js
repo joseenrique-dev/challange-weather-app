@@ -5,9 +5,14 @@ import getStrDay from "../../utils/getStrDay"
 import { Link } from 'react-router-dom';
 
 
-//{day = "", maxTemp= "", minTemp= "", iconTemp= "" }
 export default function ForecastDays(
-    {  day = "", maxTemp= "", minTemp= "", icon= "", location }){
+    {   day = "",
+        maxTemp= "",
+        minTemp= "", 
+        icon= "", 
+        location 
+    }){
+        
     const { Meta } = Card;
     let urlIcon = `http://openweathermap.org/img/wn/${ icon }@2x.png`
     const dayOfWeek = new Date(day)
@@ -18,16 +23,17 @@ export default function ForecastDays(
         <div >
             <Link to={`/${location}/${getStrDay(dayOfWeek.getDay()).toLowerCase()}`} >
                 <Col className="box" span={6} style={{display: "inline-table"}}>
-                    <Card  size="small" bordered={false} className="weather-box-style" >
+                    <Card  size="small" bordered={false} style={{background: "#bad3fb",borderRadius: "6px",color: "#2d5cd8",cursor: "pointer"}}>
                     <Meta title={getStrDay(dayOfWeek.getDay())} description={selectedDate} className="weather-meta-style"/>
                     <div className="weather-icon-container">
-                        <img src={urlIcon} alt="weather icon" className="weather-icon-style"/>
+                        <img src={urlIcon} alt="weather icon" className="weather-icon-style-select"/>
                     </div>                
-                    <span>{maxTemp} °C</span>
-                    <span>{minTemp} °C</span>
+                    <span className="weather-span-common">{maxTemp} °C</span>
+                    <span className="weather-min-span weather-span-common">{minTemp} °C</span>
                     </Card>
                 </Col>
             </Link>
         </div>
+        
     );
 }

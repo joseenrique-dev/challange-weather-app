@@ -1,6 +1,10 @@
 
 
-
+/**
+ * Get most recent 5 days from list.
+ * 
+ * @param {Array} listForecast 
+ */
 export default listForecast => {
     let arrayDays = []
     if( listForecast.length != 0 ){

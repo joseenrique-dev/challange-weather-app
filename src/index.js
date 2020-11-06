@@ -1,11 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import RouteApp from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import LayoutWithRoute from './pages/layout/layout';
+import { WeatherContextProvider } from "./context/weatherContext";
+import AppContent from './pages/content/content';
+import AppHome from './pages/home/home';
+import ForecastDaysCarouser from './components/forecast-days-carouser/forecast-days-carouser';
+
+{/* <WeatherContextProvider > */}
+{/* </WeatherContextProvider>, */}
 
 ReactDOM.render(
-  <App />,
+  
+    <BrowserRouter>
+        <Switch>
+          <RouteApp exact path={'/:location/:day'} component={ForecastDaysCarouser} />
+          <RouteApp exact path={'/:location'} component={AppContent} />
+          <RouteApp path={'/'} component={AppHome} />
+        </Switch>
+      </BrowserRouter>,
   document.getElementById('root')
 );
 

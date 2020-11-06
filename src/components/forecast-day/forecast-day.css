@@ -1,4 +1,4 @@
-.weather-box-style{
+.weather-box-style-base{
     background: #bad3fb;
     border-radius: 6px;
     color: #2d5cd8;
@@ -10,6 +10,16 @@
     display: table;
 }
 
-.weather-icon-container{
-    /* width: 125px; */
+.weather-min-span{
+    float: right;
+}
+
+.weather-span-common{
+    font-family: cursive;
+    font-weight: lighter;
+}
+.weather-icon-style-select{
+    width: 140px;
+    margin-bottom: -21%;
+    margin-top: -2%;
 }

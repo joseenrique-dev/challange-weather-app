@@ -43,3 +43,22 @@
 .weather-resume-width-divider-style{
     width: 400px;
 }
+
+
+.weater-minor-div-divider{
+    width: 44%;
+    margin: 0 auto;
+}
+
+.weater-minor-separator-divider{
+    margin-top: 10px;
+    margin-bottom: -1%px;
+    background: #f2ebeb;
+}
+.weater-minor-big-div-divider{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: -1%;
+    margin-top: -3%;
+
+}
