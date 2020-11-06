@@ -1,6 +1,6 @@
 
-import {  useState, useContext ,useEffect } from "react";
-import weatherContext from "../context/weatherContext";
+import {  useState, useEffect } from "react";
+// import weatherContext from "../context/weatherContext";
 import { useHistory} from 'react-router-dom';
 import getWeatherServices from "../services/getWeatherServices";
 

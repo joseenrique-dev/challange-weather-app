@@ -1,5 +1,5 @@
-import {  useContext } from "react";
-import WeatherContext from "../context/weatherContext"
+
+// TODO: save this in .env
 const api = {
     key: "a9748d82dade1958fd30abf90c326c8f",
     base:"https://api.openweathermap.org/data/2.5/"
@@ -10,7 +10,7 @@ const api = {
  * 
  * @param {String} location 
  */
-export default location => {
+const getWeatherServices = location => {
     try {
         return fetch(
             `${api.base}forecast?q=${location}&units=metric&appid=${api.key}`,
@@ -23,3 +23,5 @@ export default location => {
         return { success: false, error: ex.message };
     }
 }
+
+export default getWeatherServices;

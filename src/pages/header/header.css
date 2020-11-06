@@ -1,5 +1,5 @@
 .weather-search-style{
-    width: 28%;
-    margin: 0 auto;
-    margin-top: -3%;
+    padding: 2%;
+    overflow: overlay;
+    margin-left: -17%;
 }

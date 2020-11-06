@@ -3,7 +3,6 @@ import {  Carousel } from 'antd';
 import { Col, Divider, Row } from 'antd';
 import getHoursByDate from "../../services/getHoursByDate"
 import ChartHours from "../chart-hours/chart-hours"
-import getDays from '../../services/getDays';
 
 export default function ForecastDaysCarouser({props}){
     

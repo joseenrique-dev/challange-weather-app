@@ -5,9 +5,9 @@
  * 
  * @param {[Object]} listSelectedHours 
  */
-export default listSelectedHours => {
+const buildChart = listSelectedHours => {
     let infoToDisplay = []
-    if( listSelectedHours.length != 0 ){
+    if( listSelectedHours.length !== 0 ){
         listSelectedHours.forEach(item => {
             infoToDisplay.push(
                 {
@@ -21,3 +21,5 @@ export default listSelectedHours => {
     
     return infoToDisplay;
 }
+
+export default buildChart;

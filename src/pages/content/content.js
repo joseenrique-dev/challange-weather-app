@@ -1,4 +1,3 @@
-import getGeneralWeatherServices from "../../services/getGeneralWeatherServices";
 import getWeatherServices from "../../services/getWeatherServices";
 import "./content.css";
 import LocationWeather from "../../components/location-weather/location-weather"

@@ -10,23 +10,16 @@ function ForecastContainerDays({location, listForecast}){
      * Initial state
      */
     const [ infoDays, setInfoDays ] = useState([]);
-    const [ loading, setLoading ] = useState(false);
-    const [ day, setDay ] = useState(false);
-    /**
-     * Get more recent five days.
-     */
-    const arrayDays = getDays(listForecast);
-
+    
     useEffect(() => {
+        /**
+         * Get more recent five days.
+         */
+        const arrayDays = getDays(listForecast);
 
         localStorage.removeItem("storeAllDays")    
         localStorage.setItem("storeAllDays",JSON.stringify(listForecast))    
-        
-        setLoading(true)
         setInfoDays(arrayDays)
-
-        return () => setLoading(false)
-    
     }, [listForecast]);
     
     return (
@@ -34,7 +27,7 @@ function ForecastContainerDays({location, listForecast}){
             <Row gutter={3} className="sibling-fade" >
                 {
                     infoDays.length === 0 
-                    ? <h1>"...cargando"</h1>
+                    ? <h1>"Loading ..."</h1>
                     :
                     infoDays.map((singleDay,index) => 
                         <div>

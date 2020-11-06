@@ -4,8 +4,8 @@ import './home.css';
 import { Row } from 'antd';
 
 import weatherReport from "../../assets/img/weatherReport.png"
-import { Typography, Divider, Col } from 'antd';
-const { Title, Paragraph, Text, Link } = Typography;
+import { Divider, Col } from 'antd';
+
 
 export default function AppHome(){
     
@@ -13,7 +13,9 @@ export default function AppHome(){
         <>
         <Row>
             <Col span={6} order={4}>
-                <img src={weatherReport} alt="weather app" style={{marginLeft: "17%"}}/>
+                <div className="weather-div-img">
+                    <img src={weatherReport} alt="weather app" className="weather-img"/>
+                </div>
             </Col>
         </Row>
     <Divider style={{color:"white"}}></Divider>

@@ -5,9 +5,9 @@
  * 
  * @param {Array} listForecast 
  */
-export default listForecast => {
+ const getDays = listForecast => {
     let arrayDays = []
-    if( listForecast.length != 0 ){
+    if( listForecast.length !== 0 ){
         let lastDate = listForecast[0].dt_txt.split(" ")[0]
         
         for(let i = 0; i < listForecast.length; i++){
@@ -26,3 +26,5 @@ export default listForecast => {
     
     return arrayDays;
 }
+
+export default getDays;

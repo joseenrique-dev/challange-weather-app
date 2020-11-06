@@ -3,7 +3,7 @@
  * 
  * @param {-}  
  */
-export default () => {
+const getHoursByDate = () => {
     let resultDay = []
 
     let selectedDate = localStorage.getItem("selectedDateToSearch")
@@ -15,3 +15,5 @@ export default () => {
     });
     return resultDay;
 }
+
+export default getHoursByDate;
