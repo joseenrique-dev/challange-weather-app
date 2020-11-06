@@ -23,7 +23,6 @@ export default listForecast => {
             
         }
     }
-    localStorage.removeItem("arrayDays");
     
     return arrayDays;
 }

@@ -1,13 +1,12 @@
 import "./forecast-days-carouser.css";
 import {  Carousel } from 'antd';
-import dayDescriptionMock from '../../mock/hour-by-day.json';
 import { Col, Divider, Row } from 'antd';
 import getHoursByDate from "../../services/getHoursByDate"
+import ChartHours from "../chart-hours/chart-hours"
+import getDays from '../../services/getDays';
 
 export default function ForecastDaysCarouser({props}){
     
-    console.log("STORAGE", JSON.parse(localStorage.getItem("storeAllDays")));
-
     const contentStyle = {
         height: '160px',
         color: '#fff',
@@ -166,6 +165,12 @@ export default function ForecastDaysCarouser({props}){
                     </div>
                 </div>
             </Carousel>
+            <Divider orientation="left" style={{color:"white"}}>Forecast Chart</Divider>
+            <div style={{backgroundColor: "rgba(0, 0, 0, 0.05)",borderRadius: "6px", padding: "3%"}}>
+            
+                <ChartHours generalData={listSelectedHours}/>
+            </div>
         </div>
+
     );
 }
