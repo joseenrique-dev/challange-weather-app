@@ -10,7 +10,7 @@ export default function AppHeader(){
     const history = useHistory();
     
     const onSearch = location => {
-         history.push(`${location}`);
+         history.push(`/${location}`);
          
     };
     return (
