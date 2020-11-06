@@ -4,3 +4,12 @@
     color: #2d5cd8;
     cursor: pointer;
 }
+
+.weather-meta-style{
+    margin: 0 auto;
+    display: table;
+}
+
+.weather-icon-container{
+    /* width: 125px; */
+}

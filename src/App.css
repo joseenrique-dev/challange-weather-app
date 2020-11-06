@@ -70,7 +70,7 @@
   float: left;
 }
 .site-layout .site-layout-background {
-  background: #fff;
+  background: black !important;
 }
 
 /* General use in app */

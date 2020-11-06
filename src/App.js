@@ -1,24 +1,22 @@
+import React from 'react';
 
-import './App.css';
-import AppHeader from './pages/header/header';
-import AppHome from './pages/home/home';
-import { Layout } from 'antd';
-import AppFooter from './pages/footer/footer';
+import { Route } from 'react-router-dom';
 
+import Layout from './pages/layout/layout';
 
-function App() {
-
-const { Content } = Layout;
+const App = ({ component: Component, rest }) => {
   return (
-    <Layout>
-    <AppHeader />
-      <Content className="site-layout " style={{ padding: '0 50px', marginTop: '7%' }}>
-        <AppHome />
-        
-      </Content>
-      <AppFooter />
-  </Layout>
+    <Route
+      {...rest}
+      render={(routeProps) => (
+        <Layout >
+          <div className="site-layout-background weather-home-distribution weather-home-visual-style" >
+            <Component {...routeProps} />
+          </div>
+        </Layout>
+      )}
+    />
   );
-}
+};
 
 export default App;

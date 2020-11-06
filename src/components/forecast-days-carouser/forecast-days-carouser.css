@@ -1,0 +1,54 @@
+.weather-divider-style{
+    background: #abc7f6;
+    height: 52%;
+    margin-top: 3%;
+    width: 1px;
+    display: inline-table;
+}
+
+.weather-container-info{
+    margin-top: 2%;
+}
+
+.weather-container-image{
+    margin-bottom: -3%;
+    margin-top: -2%;
+}
+
+.weather-princ-temp-text{
+    font-family: emoji;
+    font-size: 20px;
+}
+
+.weather-icon-style-day{
+    width: 184px;
+    margin-bottom: -21%;
+    margin-top: -2%;
+    margin: 0 auto;
+}
+
+
+.weather-min{
+    float: right;
+    margin-top: -11%;
+    margin-right: 18%;
+}
+
+.weather-max{
+    float: left;
+    margin-left: 10%;
+    margin-top: -7%;
+}
+
+.weather-temp{
+    clear: both;
+}
+
+.weather-img{
+    margin: 0 auto;
+    width: 38%;
+}
+
+.weather-date{
+margin-bottom: -8%;
+}

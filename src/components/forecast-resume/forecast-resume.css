@@ -9,3 +9,14 @@
 .weather-forecast-general-information{
     margin-top: 0%;
 }
+
+.weather-icon-container{
+    margin: auto;
+    margin-top: -5%;
+    margin-bottom: -1%;
+}
+.weather-icon-style{
+    width: 184px;
+    margin-bottom: -21%;
+    margin-top: -2%;
+}

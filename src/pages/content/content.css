@@ -1,0 +1,45 @@
+.weather-home-distribution{
+    width: 60%;
+    padding: 20px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+
+.weather-home-visual-style{
+    background: linear-gradient(180deg,#297af9,#333fb7) !important;
+    /* display: flex; */
+    flex-direction: column;
+    height: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,.06);
+    overflow: hidden;
+}
+
+
+
+/* .weather-divider-selected-day-style{
+    color: "#e4dddd";
+    border-color: "#e4dddd"
+} */
+.weather-container-divider{
+    margin: 0 auto;
+    width: 28px;
+    padding: 13px;
+}
+
+.weather-location-width-divider-style{
+    width: 283px;
+}
+
+.weather-divider-style{
+    background: #f2ebeb;
+    margin-top: -28px;
+    margin: 0 auto;
+}
+
+.weather-resume-width-divider-style{
+    width: 400px;
+}
