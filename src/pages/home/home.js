@@ -20,7 +20,9 @@ export default function AppHome(){
     <Row></Row>
        
         <div>
-            <span style={{fontSize:"57px",color: "#2a329e",fontFamily: "Relaway", width:"57px"}}>Consulte el estado del Tiempo de cualquier ciudad en tiempo real.</span>
+            <span style={{fontSize:"57px",color: "#2a329e",fontFamily: "Relaway", width:"57px"}}>
+            Check the weather of any city in real time.
+            </span>
         </div>
         </>
     );
